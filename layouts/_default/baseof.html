@@ -15,7 +15,7 @@
     </script>
     <link rel="stylesheet" href="{{ "css/site.css" | relURL }}" />
   </head>
-  <body>
+  <body{{ if and .IsPage (eq .Section "articles") }} class="article-page"{{ end }}>
     <main class="container">
       <header class="site-header">
         <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>

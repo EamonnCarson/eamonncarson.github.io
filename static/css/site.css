@@ -53,7 +53,10 @@ a {
 
 .site-title a:hover,
 a:hover {
-  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.article-page article a {
   text-decoration: underline;
 }
 
@@ -70,11 +73,6 @@ a:hover {
   padding: 6px 10px;
   font: inherit;
   cursor: pointer;
-}
-
-.theme-toggle:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
 }
 
 .about-link {
