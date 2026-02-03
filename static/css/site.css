@@ -67,6 +67,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.about-content a {
+  text-decoration: underline;
+}
+
 .site-actions {
   display: flex;
   align-items: center;
