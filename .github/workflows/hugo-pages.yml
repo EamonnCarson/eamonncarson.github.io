@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3a287949d38134f0920e6ac20032acef6d4a23c4
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
