@@ -4,6 +4,7 @@
   --color-text: #2d4a2b;    /* Forest Green */
   --color-accent: #7d8471;  /* Sage */
   --color-muted: #a4ac86;   /* Olive */
+  --color-code-bg: #2d4a2b;    /* Forest Green */
 
   /* Typography (change these to re-theme fonts) */
   --font-body: "DejaVu Sans", "FreeSans", sans-serif;
@@ -16,6 +17,7 @@ html[data-theme="dark"] {
   --color-text: #e9c46a;
   --color-accent: #f4a261;
   --color-muted: #e76f51;
+  --color-code-bg: #e9c46a;
 }
 
 * {
@@ -185,6 +187,29 @@ h3 {
 .content ol,
 .content pre {
   margin: 0 0 1rem;
+}
+
+.content pre {
+  position: relative;
+  overflow-x: auto;
+  background: var(--color-code-bg);
+  padding: 0.85rem 1rem 0.85rem 1.25rem;
+}
+
+.content pre::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-text);
+}
+
+.content pre code {
+  display: block;
+  background: transparent;
+  padding: 0;
 }
 
 .about-layout {
