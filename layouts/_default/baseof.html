@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="{{ "css/site.css" | relURL }}" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="site-header">
+        <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+        <div class="site-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+          <a class="about-link" href="{{ "/about/" | relURL }}">About</a>
+        </div>
+      </header>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <script src="{{ "js/theme-toggle.js" | relURL }}"></script>
+  </body>
+</html>

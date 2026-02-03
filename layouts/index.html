@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section>
+  {{ with .Site.Params.description }}<p class="tagline">{{ . }}</p>{{ end }}
+  <h2>Articles</h2>
+  <ul class="post-list">
+    {{ range where .Site.RegularPages.ByDate.Reverse "Section" "articles" }}
+      <li class="post-item">
+        <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+        <p class="post-summary">{{ .Summary | plainify }}</p>
+      </li>
+    {{ else }}
+      <li>No articles yet. Add one in <code>content/articles</code>.</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

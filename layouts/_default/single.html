@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article>
+  <h2>{{ .Title }}</h2>
+  <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+  <div class="content">{{ .Content }}</div>
+  <p><a href="{{ "/" | relURL }}">← Back to home</a></p>
+</article>
+{{ end }}
