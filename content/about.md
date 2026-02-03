@@ -8,8 +8,14 @@ profile_image = "/images/profile-placeholder.svg"
 
 Hi, I am Eamonn.
 
-This is my research blog where I share articles, notes, and experiments.
+This is my research blog where I share articles, notes, experiments, and observations.
 
-I am interested in machine learning, decision-making systems, and writing clear technical explanations.
+I am interested in machine learning.
 
-You can replace the image on the left by adding your own file in `static/images/` and updating `profile_image` in this file.
+I'd like to own the things that make me smarter.
+
+Here are some of my favorite papers and resources:
+
+- [Language Modelling is Compression](https://arxiv.org/pdf/2309.10668)
+- [Lora Without Regret](https://thinkingmachines.ai/blog/lora/)
+- [The modded-nanogpt speedrun](https://github.com/KellerJordan/modded-nanogpt)
