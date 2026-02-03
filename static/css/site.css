@@ -93,13 +93,13 @@ a:hover {
 }
 
 .theme-icon-night {
-  -webkit-mask-image: url("/images/night-sky.svg");
-  mask-image: url("/images/night-sky.svg");
+  -webkit-mask-image: url("/images/ursa-major.svg");
+  mask-image: url("/images/ursa-major.svg");
 }
 
 .theme-icon-sunrise {
-  -webkit-mask-image: url("/images/sunrise.svg");
-  mask-image: url("/images/sunrise.svg");
+  -webkit-mask-image: url("/images/sun.svg");
+  mask-image: url("/images/sun.svg");
 }
 
 html[data-theme="light"] .theme-icon-night {
