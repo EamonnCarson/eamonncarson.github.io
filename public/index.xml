@@ -6,8 +6,15 @@
     <description>Recent content on Eamonn Carson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jan 2026 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 10:00:00 -0800</lastBuildDate>
     <atom:link href="http://localhost:8080/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:8080/about/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 -0800</pubDate>
+      <guid>http://localhost:8080/about/</guid>
+      <description>Hi, I am Eamonn.&#xA;This is my research blog where I share articles, notes, and experiments.&#xA;I am interested in machine learning, decision-making systems, and writing clear technical explanations.&#xA;You can replace the image on the left by adding your own file in static/images/ and updating profile_image in this file.</description>
+    </item>
     <item>
       <title>Welcome</title>
       <link>http://localhost:8080/articles/welcome/</link>

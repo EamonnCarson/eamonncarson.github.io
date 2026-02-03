@@ -4,18 +4,14 @@
 
   if (!button) return;
 
-  function labelFor(theme) {
-    return theme === "dark" ? "Light mode" : "Dark mode";
-  }
-
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-    button.textContent = labelFor(theme);
+    button.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
   }
 
   var current = root.getAttribute("data-theme") || "light";
-  button.textContent = labelFor(current);
+  button.setAttribute("aria-label", current === "dark" ? "Switch to light mode" : "Switch to dark mode");
 
   button.addEventListener("click", function () {
     var next = (root.getAttribute("data-theme") || "light") === "dark" ? "light" : "dark";

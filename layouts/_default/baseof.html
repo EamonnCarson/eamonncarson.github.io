@@ -20,7 +20,10 @@
       <header class="site-header">
         <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
         <div class="site-actions">
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <span class="theme-icon theme-icon-night" aria-hidden="true"></span>
+            <span class="theme-icon theme-icon-sunrise" aria-hidden="true"></span>
+          </button>
           <a class="about-link" href="{{ "/about/" | relURL }}">About</a>
         </div>
       </header>

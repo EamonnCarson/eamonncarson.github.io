@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="about-layout">
+  <div class="about-photo-wrap">
+    {{ with .Params.profile_image }}
+      <img class="about-photo" src="{{ . | relURL }}" alt="Photo of {{ $.Site.Title }}" />
+    {{ else }}
+      <div class="about-photo about-photo-placeholder">Add your photo</div>
+    {{ end }}
+  </div>
+  <article class="about-content">
+    <h2>{{ .Title }}</h2>
+    <div class="content">{{ .Content }}</div>
+  </article>
+</section>
+{{ end }}
