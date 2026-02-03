@@ -148,6 +148,20 @@ h3 {
   margin: 0 0 12px;
 }
 
+.hero-image {
+  display: block;
+  max-width: min(560px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.hero-message {
+  margin: 10px 0 0;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+
 .post-list {
   list-style: none;
   padding: 0;
